@@ -1,0 +1,22 @@
+
+ Create a Node.js Backend application.
+ Add the data provided to you in your MongoDB instance.
+1).
+ -Create a RESTful endpoint(GET API) to retrieve only NAME, PRICE and SPECIFICATIONS from
+all the products matching the following queries:
+ -Name (Single value – Must Include partial match(searching))
+ -Category (Single value query– Exact match)
+ -Subcategory (Multiple value query– Match at least one value - Exact match)
+ -Inventory (Must be greater than 0 - DEFAULT)
+ -Date (DEFAULT SORT – Latest)(Date filter is good to have feature)
+
+Queries on Category, Subcategory, Price and Specifications should work in combination.
+
+1B)(optional) In case of category as a single query parameter, modify the above API to store the
+queried results (in step 1) into REDIS for future queries on the same category value to
+return data from Redis.
+ 
+2).Lastly, create a 'Place Order' RESTful endpoint(API) to save order details placed by the
+customer. The sole purpose of this part of the challenge is to showcase your
+thoughtfulness of potential use-cases of an E-Commerce.
+
