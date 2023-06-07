@@ -1,0 +1,102 @@
+[
+    {
+        "name" : "bell laptop",
+        "price" : 60000,
+        "category" : "laptop",
+        "subcategory" : ["gaming", "editing"],
+        "specifications" : [{"key": "ram", "value": "6GB"} , {"key": "processor", "value": "i7"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-09" 
+    },
+
+    {
+        "name" : "empty laptop",
+        "price" : 30000,
+        "category" : "laptop",
+        "subcategory" : ["gaming"],
+        "specifications" : [{"key": "ram", "value": "2GB"} , {"key": "processor", "value": "i7"}],
+        "inventory": 0,
+        "createdAt" : "2020-12-10" 
+    },
+
+    {
+        "name" : "small laptop",
+        "price" : 30000,
+        "category" : "laptop",
+        "subcategory" : ["editing"],
+        "specifications" : [{"key": "ram", "value": "2GB"} , {"key": "processor", "value": "i5"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-11" 
+    },
+
+    {
+        "name" : "bell mobile",
+        "price" : 6000,
+        "category" : "mobile",
+        "subcategory" : ["gaming"],
+        "specifications" : [{"key": "ram", "value": "2GB"} , {"key": "wireless charging", "value": "yes"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-09" 
+    },
+
+    {
+        "name" : "small mobile",
+        "price" : 3000,
+        "category" : "mobile",
+        "subcategory" : ["editing"],
+        "specifications" : [{"key": "ram", "value": "2GB"} , {"key": "wireless charging", "value": "yes"}],
+        "inventory": 0,
+        "createdAt" : "2020-12-10" 
+    },
+
+    {
+        "name" : "old mobile",
+        "price" : 1000,
+        "category" : "mobile",
+        "subcategory" : ["editing"],
+        "specifications" : [{"key": "ram", "value": "2GB"} , {"key": "wireless charging", "value": "no"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-11" 
+    },
+
+    {
+        "name" : "bell keyboard",
+        "price" : 600,
+        "category" : "keyboard",
+        "subcategory" : ["gaming", "editing"],
+        "specifications" : [{"key": "wireless", "value": "yes"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-09" 
+    },
+
+    {
+        "name" : "small keyboard",
+        "price" : 200,
+        "category" : "keyboard",
+        "subcategory" : ["editing"],
+        "specifications" : [{"key": "wireless", "value": "no"}],
+        "inventory": 50,
+        "createdAt" : "2020-12-10" 
+    },
+
+    {
+        "name" : "empty keyboard",
+        "price" : 500,
+        "category" : "keyboard",
+        "subcategory" : ["editing"],
+        "specifications" : [{"key": "wireless", "value": "no"}],
+        "inventory": 0,
+        "createdAt" : "2020-12-11" 
+    },
+
+    {
+        "name" : "bell cover",
+        "price" : 400,
+        "category" : "laptop cover",
+        "subcategory" : ["gaming"],
+        "specifications" : [{"key": "fit", "value": "i7"}],
+        "inventory": 30,
+        "createdAt" : "2020-12-09" 
+    }
+    
+]
