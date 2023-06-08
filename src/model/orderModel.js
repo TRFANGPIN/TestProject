@@ -6,7 +6,6 @@ const orderSchema = db.Schema({
   orderInfo: [{}],
   totalAmount: { type: Number, required: true },
   discount: { type: Number, required: true },
-  paidAmount: { type: Number, required: true },
   orderId: { type: Number, required: true },
 });
 

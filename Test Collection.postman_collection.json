@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "404b1ec3-7a1a-4a88-8fed-5ec8e5159c1c",
+		"name": "Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14939939"
+	},
+	"item": [
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.137.1:3200/sample/getData?name=bell&category=keyboard&subcategory=editing",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"137",
+						"1"
+					],
+					"port": "3200",
+					"path": [
+						"sample",
+						"getData"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bell"
+						},
+						{
+							"key": "category",
+							"value": "keyboard",
+							"description": "pass category value"
+						},
+						{
+							"key": "subcategory",
+							"value": "editing"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cusName\": \"raypan\",\r\n    \"orderDate\": \"2023-08-08 20:59:00\",\r\n    \"orderInfo\": [\r\n        {\r\n            \"itemInfo\": \"647fea155604bc5f4dcee12b\",\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"itemInfo\": \"647fea155604bc5f4dcee12b\",\r\n            \"quantity\": 2\r\n        }\r\n    ],\r\n    \"totalAmount\": 13000,\r\n    \"discount\": 8000,\r\n    \"paymentMethod\": [\r\n        {\r\n            \"type\": \"card\",\r\n            \"vendor\": \"visa\",\r\n            \"paidAmount\": 4000\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.137.1:3200/sample/addorder",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"137",
+						"1"
+					],
+					"port": "3200",
+					"path": [
+						"sample",
+						"addorder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
