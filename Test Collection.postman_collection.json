@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.137.1:3200/sample/getData?name=bell&category=keyboard&subcategory=editing",
+					"raw": "http://192.168.137.1:3200/sample/getData?category=mobile&subcategory=editing&date=2020-12-11",
 					"protocol": "http",
 					"host": [
 						"192",
@@ -27,17 +27,17 @@
 					],
 					"query": [
 						{
-							"key": "name",
-							"value": "bell"
-						},
-						{
 							"key": "category",
-							"value": "keyboard",
+							"value": "mobile",
 							"description": "pass category value"
 						},
 						{
 							"key": "subcategory",
 							"value": "editing"
+						},
+						{
+							"key": "date",
+							"value": "2020-12-11"
 						}
 					]
 				}

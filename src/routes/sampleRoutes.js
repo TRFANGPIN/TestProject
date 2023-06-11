@@ -15,6 +15,7 @@ module.exports.viewItem = async (req) => {
         category: req.query.category,
         inventory: { $gt: 0 },
         subcategory: { $in: [req.query.subcategory] },
+        createdAt: req.query.date,
       },
       { name: 1, price: 1, specifications: 1 }
     );
@@ -88,7 +89,7 @@ module.exports.addOrder = async (req) => {
             return (res = { data: { msg: `no item exist` }, status: 404 });
           }
         });
-        if ((newOrder.totalAmount - newOrder.discount) > paidAmount) {
+        if (newOrder.totalAmount - newOrder.discount > paidAmount) {
           let newCredit = new creditModel({
             cusName: newOrder.cusName,
             orderId: "ORD" + newOrder.orderId,
